@@ -41,7 +41,7 @@ Clean and readable code
 
 📸 Preview
 
-Add screenshots or GIFs of the landing page here
+![Landing Page Preview](screenshot/Beth-Landing-Page.png)
 
 📄 License
 
