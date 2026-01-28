@@ -41,7 +41,7 @@ Clean and readable code
 
 📸 Preview
 
-![Landing Page Preview](screenshot/Beth-Landing-Page.png)
+![Landing Page Preview](screenshots/Beth-Landing-Page.png)
 
 📄 License
 
