@@ -1,0 +1,223 @@
+body{
+    background-color: #1a1022;
+    color: white;
+    font-family: "Be Vietnam Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar{
+    position: fixed;
+    top: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    z-index: 100;
+    pointer-events: none;
+    ;
+}
+
+.nav-brand{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.brand-text{
+    font-size: 1.25rem;
+    font-weight: 700;
+    
+    
+}
+
+.nav-menu{
+    pointer-events: auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    background: rgba(26, 16, 34, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 2rem;
+    border-radius: 100px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2)
+}
+
+.nav-link{
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover{
+    color: #8311d4;
+}
+
+.nav-btn-icon{
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+
+}
+
+.nav-btn-icon:hover{
+    background: #8311d4;
+    transform: scale(1.05);
+}
+
+.nav-brand-icon{
+    background: url(/public/media/vinyl-record-svgrepo-com.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+    animation: spin 8s linear infinite;;
+}
+
+
+.video-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.btn-home{
+    height: 50px;
+    width: 150px;
+    background-color: #8311d4;
+    border-radius: 50px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+
+}
+
+.btn-search{
+    height: 50px;
+    width: 150px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    color: #8311d4;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.main-text{
+    text-align: center;
+    margin-top: 20%;
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 1.2;
+    }
+
+.text-second {
+    font-weight: 900;
+    font-size: 5rem;
+    text-align: center;
+
+    color: transparent;              
+    -webkit-text-stroke: 2px #8311d4; 
+    text-stroke: 2px #8311d4;         
+    color: transparent;
+    -webkit-text-stroke: 2px #8311d4;
+    text-shadow: 0 0 10px rgba(131,17,212,0.4);
+    
+}
+
+.glitch {
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke: 2px #8311d4;
+    cursor: pointer;
+    animation: glitch-random-1 2s steps(1, end) infinite;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: transparent;
+    -webkit-text-stroke: 2px #8311d4;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* HOVER RANDOM */
+.glitch:hover::before {
+    opacity: 1;
+    -webkit-text-stroke-color: #ff2bf1;
+    animation: glitch-random-1 0.8s steps(1, end) infinite;
+}
+
+.glitch:hover::after {
+    opacity: 1;
+    -webkit-text-stroke-color: #00f0ff;
+    animation: glitch-random-2 1s steps(1, end) infinite;
+}
+
+
+/* KEYFRAMES RANDOM */
+@keyframes glitch-random-1 {
+    0%   { transform: translate(0); }
+    10%  { transform: translate(-3px, 2px); }
+    20%  { transform: translate(2px, -3px); }
+    35%  { transform: translate(-1px, 1px); }
+    50%  { transform: translate(3px, 0); }
+    70%  { transform: translate(-2px, -2px); }
+    100% { transform: translate(0); }
+}
+
+@keyframes glitch-random-2 {
+    0%   { transform: translate(0); }
+    15%  { transform: translate(3px, -1px); }
+    30%  { transform: translate(-3px, 2px); }
+    45%  { transform: translate(1px, -2px); }
+    65%  { transform: translate(-1px, 3px); }
+    100% { transform: translate(0); }
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
